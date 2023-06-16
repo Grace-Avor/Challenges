@@ -1,0 +1,114 @@
+
+body {
+    background-color: rgb(233, 72, 99);
+    opacity: 0.7;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div1 {
+    width: 50%;
+    line-height: 20px;
+}
+
+.div2 {
+    width: 40%;
+}
+
+p, .div1{
+    font-size: small;
+    color: white;
+    text-align: center;
+}
+
+.try {
+    background-color: rgb(135, 28, 197);
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+form {
+    background-color: white;
+    height: 450px;
+    border-radius: 10px ;
+    box-sizing: border-box;
+}
+
+input {
+    margin: 15px 0 15px 15px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    outline: none;
+}
+.lastp {
+    color: rgba(132, 151, 168, 0.726);
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+#submit {
+    background-color: rgb(81, 245, 245);
+    border: none;
+    font-size: large;
+    color: white;
+}
+
+.material-icons{
+    margin: 0px -50px;
+    font-size: 20px;
+    color:red;
+}
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    
+} 
+
+/*Tablet styles (max-width: 768px) Mobile styles (max-width: 414px) */
+@media only screen and (max-width: 576px) {
+    #flexcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .div1, .div2 {
+        width: 60%;
+        
+    }
+
+    input {
+        margin: 15px 0 15px 15px;
+        width: 80%;
+        height: 40px;
+    }
+    
+    #submit {
+        font-size: small;
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    
+} 
